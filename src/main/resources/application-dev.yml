@@ -1,0 +1,16 @@
+server:
+  port: 8082
+  context-path: /girl
+
+#使用@Value("${name}")注解引用
+name: le
+
+#使用
+#@Component
+#@EnableConfigurationProperties(GirlProperties.class)
+#@ConfigurationProperties(prefix = "girl")
+#将配置信息导入类
+girl:
+  cupSize: F
+  age: 18
+  content: "cupSize: ${cupSize}, age: ${age}"

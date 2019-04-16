@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: prod
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl?useSSL=false
+    # useSSL=false ,不使用SSL认证
+    username: root
+    password: NumbMen221@love!
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      # create 每次都重新建表
+      # update 第一次会创建，之后不会再创建
+      # create-drop 应用停止就删
+      # validate 验证表结构和类的是否一致，不一致报错
+
+    show-sql: true
+      # 显示sql语句
